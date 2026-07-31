@@ -1,0 +1,23 @@
+{
+  "visual_identity": "cp3-visual_identity",
+  "double_diamond": "cp3-double_diamond",
+  "process_chart": "cp3-process_chart",
+  "circled_table": "cp3-circled_table",
+  "ai_product_flow": "cp3-ai_product_flow",
+  "attention_formula_present": "cp3-attention_formula_present",
+  "numeric_table": "cp3-numeric_table",
+  "legend_chart": "cp3-legend_chart",
+  "pass_rate_table": "cp3-pass_rate_table",
+  "formula_with_caption": "cp3-formula_with_caption",
+  "architecture_diagram": "cp3-architecture_diagram",
+  "ocr_visual_conflict": "cp3-ocr_visual_conflict",
+  "text_overview": "cp3-text_overview",
+  "text_pipeline": "cp3-text_pipeline",
+  "text_chunk_limit": "cp3-text_chunk_limit",
+  "embedding_model": "cp3-embedding_model",
+  "multiple_visuals_page59": "cp3-multiple_visuals_page59",
+  "two_charts": "cp3-two_charts",
+  "attention_no_formula": "cp3-empty-attention",
+  "no_deadline": "cp3-empty-deadline",
+  "blurred_numeric_cell": "cp3-empty-blurred-cell"
+}

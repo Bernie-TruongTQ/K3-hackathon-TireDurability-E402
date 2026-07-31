@@ -57,6 +57,7 @@ class IndexResponse(BaseModel):
     extract_output_path: Optional[str] = Field(None, description="Path to extraction output")
     total_pages_processed: Optional[int] = Field(None, description="Total pages processed")
     chunks_indexed: Optional[int] = Field(None, description="Number of chunks indexed to database")
+    document_id: Optional[str] = Field(None, description="Stable document identifier used for scoped chat")
 
     class Config:
         json_schema_extra = {
@@ -75,7 +76,13 @@ class ChatRequest(BaseModel):
     """Request schema for chat/query."""
 
     query: str = Field(..., description="User's question or query", min_length=1)
-    llm_provider: Optional[str] = Field(None, description="Override default LLM provider: 'qwen' or 'gemini'")
+    llm_provider: Optional[str] = Field(
+        None,
+        description="Override provider: 'demo', 'qwen', 'gemini' or 'openai'",
+    )
+    document_id: Optional[str] = Field(None, description="Only retrieve from this indexed document")
+    selected_page: Optional[int] = Field(None, ge=1, description="Page explicitly selected by the user")
+    selected_image_id: Optional[str] = Field(None, description="Visual region explicitly selected by the user")
 
     class Config:
         json_schema_extra = {"example": {"query": "Nội dung chính của tài liệu là gì?", "llm_provider": "qwen"}}
@@ -87,6 +94,10 @@ class SourceDocument(BaseModel):
     page: int = Field(..., description="Page number")
     filename: str = Field(..., description="Original filename")
     content_preview: str = Field(..., description="Preview of the content (first 200 chars)")
+    source_id: Optional[str] = Field(None, description="Chunk or region identifier")
+    region_type: Optional[str] = Field(None, description="text, table, formula or image")
+    image_path: Optional[str] = Field(None, description="Local path/URL for a cited visual crop")
+    score: Optional[float] = Field(None, description="Retrieval/reranking relevance score")
 
 
 class ChatResponse(BaseModel):
@@ -97,6 +108,11 @@ class ChatResponse(BaseModel):
     answer: str = Field(..., description="Generated answer")
     sources: List[SourceDocument] = Field(default_factory=list, description="Source documents used")
     llm_provider: str = Field(..., description="LLM provider used for generation")
+    model: str = Field(..., description="Exact model identifier used for generation")
+    route: str = Field(default="text", description="text, visual, clarify, abstain or refuse")
+    grounded: bool = Field(default=True, description="Whether the answer is grounded in returned sources")
+    trace_id: Optional[str] = Field(None, description="Trace identifier for CP3/CP6 evidence")
+    is_mock: bool = Field(default=False, description="True only for the explicitly labelled demo provider")
 
     class Config:
         json_schema_extra = {

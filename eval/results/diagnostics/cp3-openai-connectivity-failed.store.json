@@ -1,0 +1,398 @@
+[
+  {
+    "page_content": "Tài liệu: ai_product_flow.pdf\nTrang: 6\nLoại vùng: diagram\nTiêu đề ngữ cảnh: (không có)\nMô tả OCR: Quy trình phát triển sản phẩm AI: Observe → Prototype → Evaluate → Iterate.",
+    "metadata": {
+      "source_id": "af58c6c55e73acc694cc",
+      "document_id": "cp3-ai_product_flow",
+      "source": "D:\\All_Vin\\day5\\K3-hackathon-TireDurability-E402\\eval\\fixtures\\generated\\ai_product_flow.json",
+      "filename": "ai_product_flow.pdf",
+      "page": 6,
+      "region_order": 1,
+      "region_type": "diagram",
+      "header_path": "",
+      "coordinates": "[40, 100, 860, 490]",
+      "image_path": "D:\\All_Vin\\day5\\K3-hackathon-TireDurability-E402\\project\\ocr_output\\cp3-fixtures\\ai_product_flow.png",
+      "token_count": 24,
+      "chunk_type": "visual"
+    },
+    "score": null
+  },
+  {
+    "page_content": "Tài liệu: architecture_diagram.pdf\nTrang: 2\nLoại vùng: diagram\nTiêu đề ngữ cảnh: (không có)\nMô tả OCR: Sau OCR là bước Chunk & Index, rồi Retrieve & Rerank, cuối cùng Generate.",
+    "metadata": {
+      "source_id": "50d21690e35edfbfc9e8",
+      "document_id": "cp3-architecture_diagram",
+      "source": "D:\\All_Vin\\day5\\K3-hackathon-TireDurability-E402\\eval\\fixtures\\generated\\architecture_diagram.json",
+      "filename": "architecture_diagram.pdf",
+      "page": 2,
+      "region_order": 1,
+      "region_type": "diagram",
+      "header_path": "",
+      "coordinates": "[40, 100, 860, 490]",
+      "image_path": "D:\\All_Vin\\day5\\K3-hackathon-TireDurability-E402\\project\\ocr_output\\cp3-fixtures\\architecture_diagram.png",
+      "token_count": 25,
+      "chunk_type": "visual"
+    },
+    "score": null
+  },
+  {
+    "page_content": "Tài liệu: attention_formula_present.pdf\nTrang: 27\nLoại vùng: formula\nTiêu đề ngữ cảnh: (không có)\nMô tả OCR: Công thức: Attention(Q,K,V) = softmax(QK^T / sqrt(d_k))V.",
+    "metadata": {
+      "source_id": "3fc0ca51b4837b64910e",
+      "document_id": "cp3-attention_formula_present",
+      "source": "D:\\All_Vin\\day5\\K3-hackathon-TireDurability-E402\\eval\\fixtures\\generated\\attention_formula_present.json",
+      "filename": "attention_formula_present.pdf",
+      "page": 27,
+      "region_order": 1,
+      "region_type": "formula",
+      "header_path": "",
+      "coordinates": "[40, 100, 860, 490]",
+      "image_path": "D:\\All_Vin\\day5\\K3-hackathon-TireDurability-E402\\project\\ocr_output\\cp3-fixtures\\attention_formula_present.png",
+      "token_count": 22,
+      "chunk_type": "visual"
+    },
+    "score": null
+  },
+  {
+    "page_content": "Tài liệu: circled_table.pdf\nTrang: 9\nLoại vùng: table\nTiêu đề ngữ cảnh: (không có)\nMô tả OCR: Bảng được chọn: Model A 0.72; Model B 0.81; Model C 0.76.",
+    "metadata": {
+      "source_id": "3d01c5ce00cc4ad23612",
+      "document_id": "cp3-circled_table",
+      "source": "D:\\All_Vin\\day5\\K3-hackathon-TireDurability-E402\\eval\\fixtures\\generated\\circled_table.json",
+      "filename": "circled_table.pdf",
+      "page": 9,
+      "region_order": 1,
+      "region_type": "table",
+      "header_path": "",
+      "coordinates": "[40, 100, 860, 490]",
+      "image_path": "D:\\All_Vin\\day5\\K3-hackathon-TireDurability-E402\\project\\ocr_output\\cp3-fixtures\\circled_table.png",
+      "token_count": 23,
+      "chunk_type": "visual"
+    },
+    "score": null
+  },
+  {
+    "page_content": "Tài liệu: double_diamond.pdf\nTrang: 16\nLoại vùng: diagram\nTiêu đề ngữ cảnh: (không có)\nMô tả OCR: Double Diamond gồm bốn giai đoạn: Discover, Define, Develop, Deliver.",
+    "metadata": {
+      "source_id": "4e1e34fefc4716d2accf",
+      "document_id": "cp3-double_diamond",
+      "source": "D:\\All_Vin\\day5\\K3-hackathon-TireDurability-E402\\eval\\fixtures\\generated\\double_diamond.json",
+      "filename": "double_diamond.pdf",
+      "page": 16,
+      "region_order": 1,
+      "region_type": "diagram",
+      "header_path": "",
+      "coordinates": "[40, 100, 860, 490]",
+      "image_path": "D:\\All_Vin\\day5\\K3-hackathon-TireDurability-E402\\project\\ocr_output\\cp3-fixtures\\double_diamond.png",
+      "token_count": 25,
+      "chunk_type": "visual"
+    },
+    "score": null
+  },
+  {
+    "page_content": "Tài liệu: embedding_model.pdf\nTrang: 8\nTiêu đề ngữ cảnh: Embedding\nNội dung:\n# Embedding\nHệ thống dùng Qwen/Qwen3-Embedding-0.6B.",
+    "metadata": {
+      "source_id": "502cea39928d598135f2",
+      "document_id": "cp3-embedding_model",
+      "source": "D:\\All_Vin\\day5\\K3-hackathon-TireDurability-E402\\eval\\fixtures\\generated\\embedding_model.json",
+      "filename": "embedding_model.pdf",
+      "page": 8,
+      "region_order": 1,
+      "region_type": "text",
+      "header_path": "Embedding",
+      "coordinates": "[40, 80, 860, 460]",
+      "image_path": "",
+      "token_count": 18,
+      "chunk_type": "text"
+    },
+    "score": null
+  },
+  {
+    "page_content": "Tài liệu: formula_with_caption.pdf\nTrang: 7\nLoại vùng: formula\nTiêu đề ngữ cảnh: (không có)\nMô tả OCR: Caption ghi d_k là số chiều của vector key và sqrt(d_k) là hệ số chuẩn hóa.",
+    "metadata": {
+      "source_id": "d9aed846d09b3094bdf9",
+      "document_id": "cp3-formula_with_caption",
+      "source": "D:\\All_Vin\\day5\\K3-hackathon-TireDurability-E402\\eval\\fixtures\\generated\\formula_with_caption.json",
+      "filename": "formula_with_caption.pdf",
+      "page": 7,
+      "region_order": 1,
+      "region_type": "formula",
+      "header_path": "",
+      "coordinates": "[40, 100, 860, 490]",
+      "image_path": "D:\\All_Vin\\day5\\K3-hackathon-TireDurability-E402\\project\\ocr_output\\cp3-fixtures\\formula_with_caption.png",
+      "token_count": 27,
+      "chunk_type": "visual"
+    },
+    "score": null
+  },
+  {
+    "page_content": "Tài liệu: legend_chart.pdf\nTrang: 5\nLoại vùng: chart\nTiêu đề ngữ cảnh: (không có)\nMô tả OCR: Chú giải biểu đồ: màu cam là VisualRAG; màu xanh là Text-only RAG.",
+    "metadata": {
+      "source_id": "fea881525a30c5a193c8",
+      "document_id": "cp3-legend_chart",
+      "source": "D:\\All_Vin\\day5\\K3-hackathon-TireDurability-E402\\eval\\fixtures\\generated\\legend_chart.json",
+      "filename": "legend_chart.pdf",
+      "page": 5,
+      "region_order": 1,
+      "region_type": "chart",
+      "header_path": "",
+      "coordinates": "[40, 100, 860, 490]",
+      "image_path": "D:\\All_Vin\\day5\\K3-hackathon-TireDurability-E402\\project\\ocr_output\\cp3-fixtures\\legend_chart.png",
+      "token_count": 26,
+      "chunk_type": "visual"
+    },
+    "score": null
+  },
+  {
+    "page_content": "Tài liệu: multiple_visuals_page59.pdf\nTrang: 59\nLoại vùng: chart\nTiêu đề ngữ cảnh: (không có)\nMô tả OCR: Chart A: Revenue | Q1; Revenue | Q2",
+    "metadata": {
+      "source_id": "04a6e1c4e86e3f86a92c",
+      "document_id": "cp3-multiple_visuals_page59",
+      "source": "D:\\All_Vin\\day5\\K3-hackathon-TireDurability-E402\\eval\\fixtures\\generated\\multiple_visuals_page59.json",
+      "filename": "multiple_visuals_page59.pdf",
+      "page": 59,
+      "region_order": 1,
+      "region_type": "chart",
+      "header_path": "",
+      "coordinates": "[40, 120, 860, 420]",
+      "image_path": "D:\\All_Vin\\day5\\K3-hackathon-TireDurability-E402\\project\\ocr_output\\cp3-fixtures\\multiple_visuals_page59-1.png",
+      "token_count": 20,
+      "chunk_type": "visual"
+    },
+    "score": null
+  },
+  {
+    "page_content": "Tài liệu: multiple_visuals_page59.pdf\nTrang: 59\nLoại vùng: table\nTiêu đề ngữ cảnh: (không có)\nMô tả OCR: Table B: Metric | 12; Metric | 18",
+    "metadata": {
+      "source_id": "e6d839dab5b568a1da5e",
+      "document_id": "cp3-multiple_visuals_page59",
+      "source": "D:\\All_Vin\\day5\\K3-hackathon-TireDurability-E402\\eval\\fixtures\\generated\\multiple_visuals_page59.json",
+      "filename": "multiple_visuals_page59.pdf",
+      "page": 59,
+      "region_order": 2,
+      "region_type": "table",
+      "header_path": "",
+      "coordinates": "[40, 160, 860, 420]",
+      "image_path": "D:\\All_Vin\\day5\\K3-hackathon-TireDurability-E402\\project\\ocr_output\\cp3-fixtures\\multiple_visuals_page59-2.png",
+      "token_count": 20,
+      "chunk_type": "visual"
+    },
+    "score": null
+  },
+  {
+    "page_content": "Tài liệu: multiple_visuals_page59.pdf\nTrang: 59\nLoại vùng: diagram\nTiêu đề ngữ cảnh: (không có)\nMô tả OCR: Diagram C: Input; Output",
+    "metadata": {
+      "source_id": "1b73ffee26ab02429da5",
+      "document_id": "cp3-multiple_visuals_page59",
+      "source": "D:\\All_Vin\\day5\\K3-hackathon-TireDurability-E402\\eval\\fixtures\\generated\\multiple_visuals_page59.json",
+      "filename": "multiple_visuals_page59.pdf",
+      "page": 59,
+      "region_order": 3,
+      "region_type": "diagram",
+      "header_path": "",
+      "coordinates": "[40, 200, 860, 420]",
+      "image_path": "D:\\All_Vin\\day5\\K3-hackathon-TireDurability-E402\\project\\ocr_output\\cp3-fixtures\\multiple_visuals_page59-3.png",
+      "token_count": 18,
+      "chunk_type": "visual"
+    },
+    "score": null
+  },
+  {
+    "page_content": "Tài liệu: numeric_table.pdf\nTrang: 9\nLoại vùng: table\nTiêu đề ngữ cảnh: (không có)\nMô tả OCR: Bảng số liệu: hàng A là 12, hàng B là 19, hàng C là 15; cao nhất là hàng B.",
+    "metadata": {
+      "source_id": "71ac66fceebd85534018",
+      "document_id": "cp3-numeric_table",
+      "source": "D:\\All_Vin\\day5\\K3-hackathon-TireDurability-E402\\eval\\fixtures\\generated\\numeric_table.json",
+      "filename": "numeric_table.pdf",
+      "page": 9,
+      "region_order": 1,
+      "region_type": "table",
+      "header_path": "",
+      "coordinates": "[40, 100, 860, 490]",
+      "image_path": "D:\\All_Vin\\day5\\K3-hackathon-TireDurability-E402\\project\\ocr_output\\cp3-fixtures\\numeric_table.png",
+      "token_count": 26,
+      "chunk_type": "visual"
+    },
+    "score": null
+  },
+  {
+    "page_content": "Tài liệu: ocr_visual_conflict.pdf\nTrang: 11\nLoại vùng: table\nTiêu đề ngữ cảnh: (không có)\nMô tả OCR: OCR ghi 75%, nhưng bảng trong ảnh gốc ghi 73%. Phải nêu rõ mâu thuẫn và ưu tiên ảnh gốc.",
+    "metadata": {
+      "source_id": "c085ebe39eb7ba212fa3",
+      "document_id": "cp3-ocr_visual_conflict",
+      "source": "D:\\All_Vin\\day5\\K3-hackathon-TireDurability-E402\\eval\\fixtures\\generated\\ocr_visual_conflict.json",
+      "filename": "ocr_visual_conflict.pdf",
+      "page": 11,
+      "region_order": 1,
+      "region_type": "table",
+      "header_path": "",
+      "coordinates": "[40, 100, 860, 490]",
+      "image_path": "D:\\All_Vin\\day5\\K3-hackathon-TireDurability-E402\\project\\ocr_output\\cp3-fixtures\\ocr_visual_conflict.png",
+      "token_count": 33,
+      "chunk_type": "visual"
+    },
+    "score": null
+  },
+  {
+    "page_content": "Tài liệu: pass_rate_table.pdf\nTrang: 6\nLoại vùng: table\nTiêu đề ngữ cảnh: (không có)\nMô tả OCR: Bảng kết quả minh họa: hàng Tổng là 17/24, tương đương 70.8%.",
+    "metadata": {
+      "source_id": "5fdda18c317469aa8409",
+      "document_id": "cp3-pass_rate_table",
+      "source": "D:\\All_Vin\\day5\\K3-hackathon-TireDurability-E402\\eval\\fixtures\\generated\\pass_rate_table.json",
+      "filename": "pass_rate_table.pdf",
+      "page": 6,
+      "region_order": 1,
+      "region_type": "table",
+      "header_path": "",
+      "coordinates": "[40, 100, 860, 490]",
+      "image_path": "D:\\All_Vin\\day5\\K3-hackathon-TireDurability-E402\\project\\ocr_output\\cp3-fixtures\\pass_rate_table.png",
+      "token_count": 26,
+      "chunk_type": "visual"
+    },
+    "score": null
+  },
+  {
+    "page_content": "Tài liệu: process_chart.pdf\nTrang: 16\nLoại vùng: diagram\nTiêu đề ngữ cảnh: (không có)\nMô tả OCR: Biểu đồ mô tả thứ tự Discover → Define → Develop → Deliver.",
+    "metadata": {
+      "source_id": "96f02213f19d0b97953a",
+      "document_id": "cp3-process_chart",
+      "source": "D:\\All_Vin\\day5\\K3-hackathon-TireDurability-E402\\eval\\fixtures\\generated\\process_chart.json",
+      "filename": "process_chart.pdf",
+      "page": 16,
+      "region_order": 1,
+      "region_type": "diagram",
+      "header_path": "",
+      "coordinates": "[40, 100, 860, 490]",
+      "image_path": "D:\\All_Vin\\day5\\K3-hackathon-TireDurability-E402\\project\\ocr_output\\cp3-fixtures\\process_chart.png",
+      "token_count": 25,
+      "chunk_type": "visual"
+    },
+    "score": null
+  },
+  {
+    "page_content": "Tài liệu: text_chunk_limit.pdf\nTrang: 4\nTiêu đề ngữ cảnh: Chunking\nNội dung:\n# Chunking\nMỗi chunk có tối đa 1024 token.",
+    "metadata": {
+      "source_id": "f77557e9f74090a982db",
+      "document_id": "cp3-text_chunk_limit",
+      "source": "D:\\All_Vin\\day5\\K3-hackathon-TireDurability-E402\\eval\\fixtures\\generated\\text_chunk_limit.json",
+      "filename": "text_chunk_limit.pdf",
+      "page": 4,
+      "region_order": 1,
+      "region_type": "text",
+      "header_path": "Chunking",
+      "coordinates": "[40, 80, 860, 460]",
+      "image_path": "",
+      "token_count": 17,
+      "chunk_type": "text"
+    },
+    "score": null
+  },
+  {
+    "page_content": "Tài liệu: text_overview.pdf\nTrang: 1\nTiêu đề ngữ cảnh: Mục tiêu\nNội dung:\n# Mục tiêu\nTài liệu trình bày pipeline VisualRAG cho PDF có cả văn bản và hình ảnh.",
+    "metadata": {
+      "source_id": "52eb612f109d42b6af09",
+      "document_id": "cp3-text_overview",
+      "source": "D:\\All_Vin\\day5\\K3-hackathon-TireDurability-E402\\eval\\fixtures\\generated\\text_overview.json",
+      "filename": "text_overview.pdf",
+      "page": 1,
+      "region_order": 1,
+      "region_type": "text",
+      "header_path": "Mục tiêu",
+      "coordinates": "[40, 80, 860, 460]",
+      "image_path": "",
+      "token_count": 24,
+      "chunk_type": "text"
+    },
+    "score": null
+  },
+  {
+    "page_content": "Tài liệu: text_pipeline.pdf\nTrang: 3\nTiêu đề ngữ cảnh: Pipeline\nNội dung:\n# Pipeline\nBa bước chính: OCR; Chunking & Indexing; Retrieval & Generation.",
+    "metadata": {
+      "source_id": "ad946b67c078f8eae3f7",
+      "document_id": "cp3-text_pipeline",
+      "source": "D:\\All_Vin\\day5\\K3-hackathon-TireDurability-E402\\eval\\fixtures\\generated\\text_pipeline.json",
+      "filename": "text_pipeline.pdf",
+      "page": 3,
+      "region_order": 1,
+      "region_type": "text",
+      "header_path": "Pipeline",
+      "coordinates": "[40, 80, 860, 460]",
+      "image_path": "",
+      "token_count": 19,
+      "chunk_type": "text"
+    },
+    "score": null
+  },
+  {
+    "page_content": "Tài liệu: two_charts.pdf\nTrang: 59\nLoại vùng: chart\nTiêu đề ngữ cảnh: (không có)\nMô tả OCR: Chart A: Series A | 12; Series B | 15",
+    "metadata": {
+      "source_id": "2b25e649a76b6be322d4",
+      "document_id": "cp3-two_charts",
+      "source": "D:\\All_Vin\\day5\\K3-hackathon-TireDurability-E402\\eval\\fixtures\\generated\\two_charts.json",
+      "filename": "two_charts.pdf",
+      "page": 59,
+      "region_order": 1,
+      "region_type": "chart",
+      "header_path": "",
+      "coordinates": "[40, 120, 860, 420]",
+      "image_path": "D:\\All_Vin\\day5\\K3-hackathon-TireDurability-E402\\project\\ocr_output\\cp3-fixtures\\two_charts-1.png",
+      "token_count": 20,
+      "chunk_type": "visual"
+    },
+    "score": null
+  },
+  {
+    "page_content": "Tài liệu: two_charts.pdf\nTrang: 59\nLoại vùng: chart\nTiêu đề ngữ cảnh: (không có)\nMô tả OCR: Chart B: Series A | 20; Series B | 18",
+    "metadata": {
+      "source_id": "b346390303e53e4f46d3",
+      "document_id": "cp3-two_charts",
+      "source": "D:\\All_Vin\\day5\\K3-hackathon-TireDurability-E402\\eval\\fixtures\\generated\\two_charts.json",
+      "filename": "two_charts.pdf",
+      "page": 59,
+      "region_order": 2,
+      "region_type": "chart",
+      "header_path": "",
+      "coordinates": "[40, 160, 860, 420]",
+      "image_path": "D:\\All_Vin\\day5\\K3-hackathon-TireDurability-E402\\project\\ocr_output\\cp3-fixtures\\two_charts-2.png",
+      "token_count": 20,
+      "chunk_type": "visual"
+    },
+    "score": null
+  },
+  {
+    "page_content": "Tài liệu: two_charts.pdf\nTrang: 59\nLoại vùng: chart\nTiêu đề ngữ cảnh: (không có)\nMô tả OCR: Chart C: Series A | 9; Series B | 11",
+    "metadata": {
+      "source_id": "e5afa8e7cdac8e378fe8",
+      "document_id": "cp3-two_charts",
+      "source": "D:\\All_Vin\\day5\\K3-hackathon-TireDurability-E402\\eval\\fixtures\\generated\\two_charts.json",
+      "filename": "two_charts.pdf",
+      "page": 59,
+      "region_order": 3,
+      "region_type": "chart",
+      "header_path": "",
+      "coordinates": "[40, 200, 860, 420]",
+      "image_path": "D:\\All_Vin\\day5\\K3-hackathon-TireDurability-E402\\project\\ocr_output\\cp3-fixtures\\two_charts-3.png",
+      "token_count": 19,
+      "chunk_type": "visual"
+    },
+    "score": null
+  },
+  {
+    "page_content": "Tài liệu: visual_identity.pdf\nTrang: 2\nLoại vùng: image\nTiêu đề ngữ cảnh: (không có)\nMô tả OCR: Ảnh một người đang trình bày; tài liệu không ghi danh tính.",
+    "metadata": {
+      "source_id": "9036ed1ce7d3883db72c",
+      "document_id": "cp3-visual_identity",
+      "source": "D:\\All_Vin\\day5\\K3-hackathon-TireDurability-E402\\eval\\fixtures\\generated\\visual_identity.json",
+      "filename": "visual_identity.pdf",
+      "page": 2,
+      "region_order": 1,
+      "region_type": "image",
+      "header_path": "",
+      "coordinates": "[40, 100, 860, 490]",
+      "image_path": "D:\\All_Vin\\day5\\K3-hackathon-TireDurability-E402\\project\\ocr_output\\cp3-fixtures\\visual_identity.png",
+      "token_count": 23,
+      "chunk_type": "visual"
+    },
+    "score": null
+  }
+]

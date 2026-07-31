@@ -1,0 +1,10 @@
+{
+  "run_id": "20260730T085137Z",
+  "provider": "openai",
+  "model": "gpt-4o-mini",
+  "total": 24,
+  "route_pass": 9,
+  "errors": 15,
+  "semantic_score": null,
+  "note": "Review grounded/usefulness/overall fields before reporting x/24."
+}

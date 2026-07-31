@@ -1,0 +1,53 @@
+{
+  "document_id": "cp3-two_charts",
+  "elements": [
+    {
+      "page": 59,
+      "region_order": 1,
+      "region_type": "chart",
+      "content": "Chart A: Series A | 12; Series B | 15",
+      "saved_link": "D:\\All_Vin\\day5\\K3-hackathon-TireDurability-E402\\project\\ocr_output\\cp3-fixtures\\two_charts-1.png",
+      "original_filename": "two_charts.pdf",
+      "metadata": {
+        "coordinates": [
+          40,
+          120,
+          860,
+          420
+        ]
+      }
+    },
+    {
+      "page": 59,
+      "region_order": 2,
+      "region_type": "chart",
+      "content": "Chart B: Series A | 20; Series B | 18",
+      "saved_link": "D:\\All_Vin\\day5\\K3-hackathon-TireDurability-E402\\project\\ocr_output\\cp3-fixtures\\two_charts-2.png",
+      "original_filename": "two_charts.pdf",
+      "metadata": {
+        "coordinates": [
+          40,
+          160,
+          860,
+          420
+        ]
+      }
+    },
+    {
+      "page": 59,
+      "region_order": 3,
+      "region_type": "chart",
+      "content": "Chart C: Series A | 9; Series B | 11",
+      "saved_link": "D:\\All_Vin\\day5\\K3-hackathon-TireDurability-E402\\project\\ocr_output\\cp3-fixtures\\two_charts-3.png",
+      "original_filename": "two_charts.pdf",
+      "metadata": {
+        "coordinates": [
+          40,
+          200,
+          860,
+          420
+        ]
+      }
+    }
+  ]
+}

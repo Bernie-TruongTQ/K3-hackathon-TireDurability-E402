@@ -1,0 +1,10 @@
+turn_id,include,visual_need,observed_tutor_behavior,citations_empty,rating,review_note
+T0816,yes,identity_in_image,Did not identify image and cited an unrelated page,false,,Out of scope should refuse without unrelated citation
+T0611,yes,diagram_explanation,Answered from page text without proof of inspecting crop,false,,Useful baseline but visual grounding is unverified
+T1043,yes,formula,Inserted a standard formula after saying it was absent,true,,Source-truth failure risk
+T0840,yes,circled_image,Stated that the image was unavailable,true,,Direct unmet visual need
+T0135,yes,chart_summary,Could not find the chart content,true,down,Direct pain with explicit negative rating
+T0393,yes,circled_table,Asked learner to retype the table,true,,Adds manual work for learner
+T0471,yes,process_diagram,Answered with inferred process and no citation,true,,Potential unsupported explanation
+T1226,yes,formula,Refused because formula was not found in extracted text,false,,Could be recoverable from original page image
+

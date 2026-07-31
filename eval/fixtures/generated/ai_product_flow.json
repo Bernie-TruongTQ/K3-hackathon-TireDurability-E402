@@ -1,0 +1,21 @@
+{
+  "document_id": "cp3-ai_product_flow",
+  "elements": [
+    {
+      "page": 6,
+      "region_order": 1,
+      "region_type": "diagram",
+      "content": "Quy trình phát triển sản phẩm AI: Observe → Prototype → Evaluate → Iterate.",
+      "saved_link": "D:\\All_Vin\\day5\\K3-hackathon-TireDurability-E402\\project\\ocr_output\\cp3-fixtures\\ai_product_flow.png",
+      "original_filename": "ai_product_flow.pdf",
+      "metadata": {
+        "coordinates": [
+          40,
+          100,
+          860,
+          490
+        ]
+      }
+    }
+  ]
+}

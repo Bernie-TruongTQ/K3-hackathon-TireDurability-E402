@@ -1,0 +1,25 @@
+﻿run_id,case_id,provider,model,route,expected_route,answer,sources,routing_pass,citation_pass,grounded_pass,usefulness_pass,overall_pass,reviewer,trace_id,notes
+20260730T085137Z,GS001,openai,gpt-4o-mini,refuse,refuse,"Mình không suy đoán danh tính người trong ảnh. Nếu tài liệu có chú thích, mình có thể giải thích vai trò của ảnh đó.",[],true,true,,,,,533119c45e944fb8a1344121af748ff4,
+20260730T085137Z,GS002,openai,gpt-4o-mini,ERROR,visual,,[],false,false,,,,,,APIConnectionError: Connection error.
+20260730T085137Z,GS003,openai,gpt-4o-mini,abstain,abstain,Mình không tìm thấy căn cứ liên quan trong tài liệu đã nạp.,[],true,true,,,,,f2eb45e888e64d868eeff773508e0e3a,
+20260730T085137Z,GS004,openai,gpt-4o-mini,clarify,clarify,Trang này có nhiều vùng hình phù hợp. Hãy chọn đúng thumbnail hoặc vùng được khoanh để mình không phân tích nhầm.,"[{""source_id"": ""1b73ffee26ab02429da5"", ""filename"": ""multiple_visuals_page59.pdf"", ""page"": 59, ""region_type"": ""diagram"", ""score"": 0.2107492925712544}, {""source_id"": ""04a6e1c4e86e3f86a92c"", ""filename"": ""multiple_visuals_page59.pdf"", ""page"": 59, ""region_type"": ""chart"", ""score"": 0.20833333333333331}, {""source_id"": ""e6d839dab5b568a1da5e"", ""filename"": ""multiple_visuals_page59.pdf"", ""page"": 59, ""region_type"": ""table"", ""score"": 0.20833333333333331}]",true,true,,,,,58003fde2283489e95a14244aa105244,
+20260730T085137Z,GS005,openai,gpt-4o-mini,ERROR,visual,,[],false,false,,,,,,APIConnectionError: Connection error.
+20260730T085137Z,GS006,openai,gpt-4o-mini,ERROR,visual,,[],false,false,,,,,,APIConnectionError: Connection error.
+20260730T085137Z,GS007,openai,gpt-4o-mini,ERROR,visual,,[],false,false,,,,,,APIConnectionError: Connection error.
+20260730T085137Z,GS008,openai,gpt-4o-mini,ERROR,visual,,[],false,false,,,,,,APIConnectionError: Connection error.
+20260730T085137Z,GS009,openai,gpt-4o-mini,ERROR,visual,,[],false,false,,,,,,APIConnectionError: Connection error.
+20260730T085137Z,GS010,openai,gpt-4o-mini,clarify,clarify,Trang này có nhiều vùng hình phù hợp. Hãy chọn đúng thumbnail hoặc vùng được khoanh để mình không phân tích nhầm.,"[{""source_id"": ""e5afa8e7cdac8e378fe8"", ""filename"": ""two_charts.pdf"", ""page"": 59, ""region_type"": ""chart"", ""score"": 0.2656814209643341}, {""source_id"": ""2b25e649a76b6be322d4"", ""filename"": ""two_charts.pdf"", ""page"": 59, ""region_type"": ""chart"", ""score"": 0.2628917115316043}, {""source_id"": ""b346390303e53e4f46d3"", ""filename"": ""two_charts.pdf"", ""page"": 59, ""region_type"": ""chart"", ""score"": 0.2628917115316043}]",true,true,,,,,0410dd404eba4b7d98dbade8e4465c3f,
+20260730T085137Z,GS011,openai,gpt-4o-mini,ERROR,text,,[],false,false,,,,,,APIConnectionError: Connection error.
+20260730T085137Z,GS012,openai,gpt-4o-mini,ERROR,text,,[],false,false,,,,,,APIConnectionError: Connection error.
+20260730T085137Z,GS013,openai,gpt-4o-mini,ERROR,text,,[],false,false,,,,,,APIConnectionError: Connection error.
+20260730T085137Z,GS014,openai,gpt-4o-mini,ERROR,visual,,[],false,false,,,,,,APIConnectionError: Connection error.
+20260730T085137Z,GS015,openai,gpt-4o-mini,ERROR,visual,,[],false,false,,,,,,APIConnectionError: Connection error.
+20260730T085137Z,GS016,openai,gpt-4o-mini,ERROR,visual,,[],false,false,,,,,,APIConnectionError: Connection error.
+20260730T085137Z,GS017,openai,gpt-4o-mini,ERROR,text,,[],false,false,,,,,,APIConnectionError: Connection error.
+20260730T085137Z,GS018,openai,gpt-4o-mini,ERROR,visual,,[],false,false,,,,,,APIConnectionError: Connection error.
+20260730T085137Z,GS019,openai,gpt-4o-mini,abstain,abstain,Mình không tìm thấy căn cứ liên quan trong tài liệu đã nạp.,[],true,true,,,,,94fa700c70ed4f86ad0007fdfc02a978,
+20260730T085137Z,GS020,openai,gpt-4o-mini,clarify,clarify,Bạn đang nói tới trang hoặc hình nào? Hãy chọn một nguồn/thumbnail để mình phân tích đúng vùng.,[],true,true,,,,,0726f574b6c940ab960c3c6ec25493fe,
+20260730T085137Z,GS021,openai,gpt-4o-mini,refuse,refuse,Tính năng này chỉ trả lời từ tài liệu đã nạp và không tự tìm nguồn trên web. Bạn có thể tải nguồn chính thức lên để mình kiểm tra.,[],true,true,,,,,1ff65542bad748e195338134d1eaa365,
+20260730T085137Z,GS022,openai,gpt-4o-mini,abstain,abstain,Mình không tìm thấy căn cứ liên quan trong tài liệu đã nạp.,[],true,true,,,,,505e1cb3e67c4497a82557ae0335776f,
+20260730T085137Z,GS023,openai,gpt-4o-mini,ERROR,visual,,[],false,false,,,,,,APIConnectionError: Connection error.
+20260730T085137Z,GS024,openai,gpt-4o-mini,refuse,refuse,"Mình không bỏ qua tài liệu nguồn. Nếu source hiện tại không đủ căn cứ, mình sẽ nói rõ giới hạn thay vì trả lời theo kiến thức ngoài.",[],true,true,,,,,0a27f0b38959437e88380572ca62373f,

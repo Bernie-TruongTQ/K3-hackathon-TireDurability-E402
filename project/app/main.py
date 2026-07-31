@@ -4,14 +4,17 @@ Document Understanding API with OCR, Indexing, and RAG capabilities.
 """
 
 from contextlib import asynccontextmanager
+import logging
 
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
-from loguru import logger
+from fastapi.staticfiles import StaticFiles
 
 from app.core.config import settings, setup_directories
 from app.models import HealthResponse
 from app.routes import api_router
+
+logger = logging.getLogger(__name__)
 
 
 @asynccontextmanager
@@ -23,7 +26,7 @@ async def lifespan(app: FastAPI):
     # Startup
     logger.info(f"Starting {settings.APP_NAME} v{settings.APP_VERSION}")
     setup_directories()
-    logger.success("Application started successfully")
+    logger.info("Application started successfully")
 
     yield
 
@@ -66,6 +69,7 @@ app.add_middleware(
 
 # Include API routes
 app.include_router(api_router)
+app.mount("/artifacts", StaticFiles(directory=str(settings.OUTPUT_DIR), check_dir=False), name="artifacts")
 
 
 @app.get("/", response_model=HealthResponse, tags=["Health"])

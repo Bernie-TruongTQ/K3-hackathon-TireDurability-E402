@@ -1,0 +1,20 @@
+{
+  "document_id": "cp3-embedding_model",
+  "elements": [
+    {
+      "page": 8,
+      "region_order": 1,
+      "region_type": "text",
+      "content": "# Embedding\nHệ thống dùng Qwen/Qwen3-Embedding-0.6B.",
+      "original_filename": "embedding_model.pdf",
+      "metadata": {
+        "coordinates": [
+          40,
+          80,
+          860,
+          460
+        ]
+      }
+    }
+  ]
+}

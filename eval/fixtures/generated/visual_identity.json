@@ -1,0 +1,21 @@
+{
+  "document_id": "cp3-visual_identity",
+  "elements": [
+    {
+      "page": 2,
+      "region_order": 1,
+      "region_type": "image",
+      "content": "Ảnh một người đang trình bày; tài liệu không ghi danh tính.",
+      "saved_link": "D:\\All_Vin\\day5\\K3-hackathon-TireDurability-E402\\project\\ocr_output\\cp3-fixtures\\visual_identity.png",
+      "original_filename": "visual_identity.pdf",
+      "metadata": {
+        "coordinates": [
+          40,
+          100,
+          860,
+          490
+        ]
+      }
+    }
+  ]
+}

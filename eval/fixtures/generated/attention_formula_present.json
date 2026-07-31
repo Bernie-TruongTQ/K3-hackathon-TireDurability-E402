@@ -1,0 +1,21 @@
+{
+  "document_id": "cp3-attention_formula_present",
+  "elements": [
+    {
+      "page": 27,
+      "region_order": 1,
+      "region_type": "formula",
+      "content": "Công thức: Attention(Q,K,V) = softmax(QK^T / sqrt(d_k))V.",
+      "saved_link": "D:\\All_Vin\\day5\\K3-hackathon-TireDurability-E402\\project\\ocr_output\\cp3-fixtures\\attention_formula_present.png",
+      "original_filename": "attention_formula_present.pdf",
+      "metadata": {
+        "coordinates": [
+          40,
+          100,
+          860,
+          490
+        ]
+      }
+    }
+  ]
+}

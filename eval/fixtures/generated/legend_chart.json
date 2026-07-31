@@ -1,0 +1,21 @@
+{
+  "document_id": "cp3-legend_chart",
+  "elements": [
+    {
+      "page": 5,
+      "region_order": 1,
+      "region_type": "chart",
+      "content": "Chú giải biểu đồ: màu cam là VisualRAG; màu xanh là Text-only RAG.",
+      "saved_link": "D:\\All_Vin\\day5\\K3-hackathon-TireDurability-E402\\project\\ocr_output\\cp3-fixtures\\legend_chart.png",
+      "original_filename": "legend_chart.pdf",
+      "metadata": {
+        "coordinates": [
+          40,
+          100,
+          860,
+          490
+        ]
+      }
+    }
+  ]
+}

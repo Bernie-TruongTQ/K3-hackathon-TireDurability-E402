@@ -1,0 +1,20 @@
+{
+  "document_id": "cp3-text_overview",
+  "elements": [
+    {
+      "page": 1,
+      "region_order": 1,
+      "region_type": "text",
+      "content": "# Mục tiêu\nTài liệu trình bày pipeline VisualRAG cho PDF có cả văn bản và hình ảnh.",
+      "original_filename": "text_overview.pdf",
+      "metadata": {
+        "coordinates": [
+          40,
+          80,
+          860,
+          460
+        ]
+      }
+    }
+  ]
+}

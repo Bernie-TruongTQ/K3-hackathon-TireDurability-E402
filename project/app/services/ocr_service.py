@@ -6,6 +6,7 @@ Follows Single Responsibility Principle - only responsible for OCR operations.
 
 import gc
 import json
+import logging
 import os
 import re
 import tempfile
@@ -13,13 +14,9 @@ import uuid
 from pathlib import Path
 from typing import Any, Dict, List, Tuple
 
-import torch
-from loguru import logger
-from pdf2image import convert_from_path
-from PIL import Image
-from transformers import AutoModel, AutoTokenizer
-
 from app.core.config import settings
+
+logger = logging.getLogger(__name__)
 
 
 class IOCRProcessor:
@@ -36,7 +33,7 @@ class DeepSeekOCRProcessor(IOCRProcessor):
     Encapsulates all DeepSeek-specific logic.
     """
 
-    def __init__(self, model: AutoModel, tokenizer: AutoTokenizer):
+    def __init__(self, model: Any, tokenizer: Any):
         self.model = model
         self.tokenizer = tokenizer
         self.prompt = "<image>\n<|grounding|>Convert the document to markdown."
@@ -70,7 +67,7 @@ class DeepSeekOCRProcessor(IOCRProcessor):
             return markdown_content
         except Exception as e:
             logger.error(f"Error during OCR inference: {e}")
-            return f"[ERROR: Could not process image {os.path.basename(image_path)} - {e}]"
+            raise RuntimeError(f"Could not process image {os.path.basename(image_path)}") from e
 
 
 class MarkdownParser:
@@ -105,8 +102,28 @@ class MarkdownParser:
         elements = []
         matches = self.BLOCK_PATTERN.findall(markdown_content)
 
+        # Some DeepSeek-OCR versions return clean Markdown without grounding
+        # markers. Keep that content instead of silently producing zero chunks.
+        if not matches:
+            return [
+                {
+                    "file_name": f"{original_filename}_{file_uuid}",
+                    "page": page_num,
+                    "region_order": 1,
+                    "region_type": "text",
+                    "content": markdown_content.strip(),
+                    "original_filename": original_filename,
+                    "metadata": {
+                        "page": page_num,
+                        "region_type": "text",
+                        "coordinates": [],
+                    },
+                    "saved_link": None,
+                }
+            ]
+
         for i, match in enumerate(matches):
-            region_type = match[0].strip()
+            region_type = match[0].strip().lower()
             coordinates_str = match[1].strip()
             content = match[2].strip()
 
@@ -117,7 +134,8 @@ class MarkdownParser:
                 logger.warning(f"Failed to parse coordinates: {coordinates_str}")
                 coordinates = []
 
-            content = content.replace("\n", " ").strip()
+            # Newlines carry Markdown hierarchy, lists, tables and formulas.
+            content = content.strip()
 
             json_obj = {
                 "file_name": f"{original_filename}_{file_uuid}",
@@ -146,7 +164,7 @@ class ImageExtractor:
     """
 
     def extract_images_from_elements(
-        self, elements: List[Dict[str, Any]], page_image: Image.Image, output_dir: str, image_counter: int
+        self, elements: List[Dict[str, Any]], page_image: Any, output_dir: str, image_counter: int
     ) -> Tuple[List[Dict[str, Any]], int]:
         """
         Extract image regions from page and save them.
@@ -163,7 +181,7 @@ class ImageExtractor:
         width, height = page_image.size
 
         for element in elements:
-            if element["region_type"] == "image":
+            if element["region_type"] in {"image", "figure", "chart", "table", "formula"}:
                 image_counter += 1
                 image_filename = f"image_{image_counter}.jpg"
                 saved_link_path = os.path.join(output_dir, image_filename)
@@ -181,7 +199,10 @@ class ImageExtractor:
                         cropped_image.save(saved_link_path, "JPEG", quality=90)
 
                         element["saved_link"] = str(saved_link_path)
-                        element["content"] = f"|<image_{image_counter}>|"
+                        element["content"] = (
+                            element.get("content")
+                            or f"Nội dung trực quan image_{image_counter} ở trang {element['page']}."
+                        )
                         logger.debug(f"Extracted image: {image_filename}")
                     except Exception as e:
                         logger.error(f"Failed to extract image: {e}")
@@ -220,13 +241,13 @@ class ResultSaver:
         json_path = os.path.join(output_dir, f"{base_filename}.json")
         with open(json_path, "w", encoding="utf-8") as f:
             json.dump({"elements": json_objects}, f, ensure_ascii=False, indent=2)
-        logger.success(f"Saved JSON: {json_path}")
+        logger.info(f"Saved JSON: {json_path}")
 
         # Save Markdown
         md_path = os.path.join(output_dir, f"{base_filename}.md")
         with open(md_path, "w", encoding="utf-8") as f:
             f.write(final_md_output)
-        logger.success(f"Saved Markdown: {md_path}")
+        logger.info(f"Saved Markdown: {md_path}")
 
         return json_path, md_path
 
@@ -275,6 +296,8 @@ class OCRService:
 
     def _process_pdf(self, pdf_path: str, output_dir: str, base_filename: str, file_uuid: str) -> Dict[str, Any]:
         """Process PDF document."""
+        from pdf2image import convert_from_path
+
         try:
             page_images = convert_from_path(pdf_path, dpi=settings.OCR_DPI)
             logger.info(f"Converted PDF to {len(page_images)} images")
@@ -319,21 +342,29 @@ class OCRService:
         json_path, md_path = self.result_saver.save(all_json_objects, output_dir, base_filename)
 
         # Cleanup
-        torch.cuda.empty_cache()
+        try:
+            import torch
+
+            if torch.cuda.is_available():
+                torch.cuda.empty_cache()
+        except ImportError:
+            pass
         gc.collect()
 
-        logger.success(f"OCR processing completed: {pdf_path}")
+        logger.info(f"OCR processing completed: {pdf_path}")
 
         return {
             "json_path": json_path,
             "markdown_path": md_path,
-            "total_pages": len(page_images) - settings.SKIP_FIRST_N_PAGES,
+            "total_pages": max(0, len(page_images) - settings.SKIP_FIRST_N_PAGES),
             "elements_count": len(all_json_objects),
             "output_dir": output_dir,
         }
 
     def _process_image(self, image_path: str, output_dir: str, base_filename: str, file_uuid: str) -> Dict[str, Any]:
         """Process single image file."""
+        from PIL import Image
+
         logger.info(f"Processing single image: {image_path}")
 
         page_image = Image.open(image_path)
@@ -355,7 +386,7 @@ class OCRService:
         # Save results
         json_path, md_path = self.result_saver.save(page_elements, output_dir, base_filename)
 
-        logger.success(f"Image processing completed: {image_path}")
+        logger.info(f"Image processing completed: {image_path}")
 
         return {
             "json_path": json_path,
@@ -371,6 +402,9 @@ def create_ocr_service() -> OCRService:
     Factory function to create OCRService with all dependencies.
     Dependency Injection pattern.
     """
+    import torch
+    from transformers import AutoModel, AutoTokenizer
+
     logger.info(f"Loading DeepSeek-OCR model: {settings.OCR_MODEL_NAME}")
 
     tokenizer = AutoTokenizer.from_pretrained(settings.OCR_MODEL_NAME, trust_remote_code=True)
@@ -389,7 +423,7 @@ def create_ocr_service() -> OCRService:
         model = model.to(torch.bfloat16)
         logger.info("Model converted to bfloat16")
 
-    logger.success("DeepSeek-OCR model loaded successfully")
+    logger.info("DeepSeek-OCR model loaded successfully")
 
     # Create dependencies
     ocr_processor = DeepSeekOCRProcessor(model, tokenizer)

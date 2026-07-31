@@ -1,5 +1,5 @@
-import AIAssistantUI from "../components/AIAssistantUI"
+import VisualRAGApp from "../components/VisualRAGApp"
 
 export default function Page() {
-  return <AIAssistantUI />
+  return <VisualRAGApp />
 }

@@ -1,0 +1,21 @@
+{
+  "document_id": "cp3-formula_with_caption",
+  "elements": [
+    {
+      "page": 7,
+      "region_order": 1,
+      "region_type": "formula",
+      "content": "Caption ghi d_k là số chiều của vector key và sqrt(d_k) là hệ số chuẩn hóa.",
+      "saved_link": "D:\\All_Vin\\day5\\K3-hackathon-TireDurability-E402\\project\\ocr_output\\cp3-fixtures\\formula_with_caption.png",
+      "original_filename": "formula_with_caption.pdf",
+      "metadata": {
+        "coordinates": [
+          40,
+          100,
+          860,
+          490
+        ]
+      }
+    }
+  ]
+}

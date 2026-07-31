@@ -1,0 +1,20 @@
+{
+  "document_id": "cp3-text_chunk_limit",
+  "elements": [
+    {
+      "page": 4,
+      "region_order": 1,
+      "region_type": "text",
+      "content": "# Chunking\nMỗi chunk có tối đa 1024 token.",
+      "original_filename": "text_chunk_limit.pdf",
+      "metadata": {
+        "coordinates": [
+          40,
+          80,
+          860,
+          460
+        ]
+      }
+    }
+  ]
+}

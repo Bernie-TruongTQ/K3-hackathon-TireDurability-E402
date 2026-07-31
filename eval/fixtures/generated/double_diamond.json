@@ -1,0 +1,21 @@
+{
+  "document_id": "cp3-double_diamond",
+  "elements": [
+    {
+      "page": 16,
+      "region_order": 1,
+      "region_type": "diagram",
+      "content": "Double Diamond gồm bốn giai đoạn: Discover, Define, Develop, Deliver.",
+      "saved_link": "D:\\All_Vin\\day5\\K3-hackathon-TireDurability-E402\\project\\ocr_output\\cp3-fixtures\\double_diamond.png",
+      "original_filename": "double_diamond.pdf",
+      "metadata": {
+        "coordinates": [
+          40,
+          100,
+          860,
+          490
+        ]
+      }
+    }
+  ]
+}

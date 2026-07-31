@@ -1,0 +1,21 @@
+{
+  "document_id": "cp3-pass_rate_table",
+  "elements": [
+    {
+      "page": 6,
+      "region_order": 1,
+      "region_type": "table",
+      "content": "Bảng kết quả minh họa: hàng Tổng là 17/24, tương đương 70.8%.",
+      "saved_link": "D:\\All_Vin\\day5\\K3-hackathon-TireDurability-E402\\project\\ocr_output\\cp3-fixtures\\pass_rate_table.png",
+      "original_filename": "pass_rate_table.pdf",
+      "metadata": {
+        "coordinates": [
+          40,
+          100,
+          860,
+          490
+        ]
+      }
+    }
+  ]
+}

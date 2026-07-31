@@ -1,0 +1,21 @@
+{
+  "document_id": "cp3-process_chart",
+  "elements": [
+    {
+      "page": 16,
+      "region_order": 1,
+      "region_type": "diagram",
+      "content": "Biểu đồ mô tả thứ tự Discover → Define → Develop → Deliver.",
+      "saved_link": "D:\\All_Vin\\day5\\K3-hackathon-TireDurability-E402\\project\\ocr_output\\cp3-fixtures\\process_chart.png",
+      "original_filename": "process_chart.pdf",
+      "metadata": {
+        "coordinates": [
+          40,
+          100,
+          860,
+          490
+        ]
+      }
+    }
+  ]
+}

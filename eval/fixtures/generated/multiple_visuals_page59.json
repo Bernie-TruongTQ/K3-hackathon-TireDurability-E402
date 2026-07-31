@@ -1,0 +1,53 @@
+{
+  "document_id": "cp3-multiple_visuals_page59",
+  "elements": [
+    {
+      "page": 59,
+      "region_order": 1,
+      "region_type": "chart",
+      "content": "Chart A: Revenue | Q1; Revenue | Q2",
+      "saved_link": "D:\\All_Vin\\day5\\K3-hackathon-TireDurability-E402\\project\\ocr_output\\cp3-fixtures\\multiple_visuals_page59-1.png",
+      "original_filename": "multiple_visuals_page59.pdf",
+      "metadata": {
+        "coordinates": [
+          40,
+          120,
+          860,
+          420
+        ]
+      }
+    },
+    {
+      "page": 59,
+      "region_order": 2,
+      "region_type": "table",
+      "content": "Table B: Metric | 12; Metric | 18",
+      "saved_link": "D:\\All_Vin\\day5\\K3-hackathon-TireDurability-E402\\project\\ocr_output\\cp3-fixtures\\multiple_visuals_page59-2.png",
+      "original_filename": "multiple_visuals_page59.pdf",
+      "metadata": {
+        "coordinates": [
+          40,
+          160,
+          860,
+          420
+        ]
+      }
+    },
+    {
+      "page": 59,
+      "region_order": 3,
+      "region_type": "diagram",
+      "content": "Diagram C: Input; Output",
+      "saved_link": "D:\\All_Vin\\day5\\K3-hackathon-TireDurability-E402\\project\\ocr_output\\cp3-fixtures\\multiple_visuals_page59-3.png",
+      "original_filename": "multiple_visuals_page59.pdf",
+      "metadata": {
+        "coordinates": [
+          40,
+          200,
+          860,
+          420
+        ]
+      }
+    }
+  ]
+}

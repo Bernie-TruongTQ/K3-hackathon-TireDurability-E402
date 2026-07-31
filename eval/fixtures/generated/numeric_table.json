@@ -1,0 +1,21 @@
+{
+  "document_id": "cp3-numeric_table",
+  "elements": [
+    {
+      "page": 9,
+      "region_order": 1,
+      "region_type": "table",
+      "content": "Bảng số liệu: hàng A là 12, hàng B là 19, hàng C là 15; cao nhất là hàng B.",
+      "saved_link": "D:\\All_Vin\\day5\\K3-hackathon-TireDurability-E402\\project\\ocr_output\\cp3-fixtures\\numeric_table.png",
+      "original_filename": "numeric_table.pdf",
+      "metadata": {
+        "coordinates": [
+          40,
+          100,
+          860,
+          490
+        ]
+      }
+    }
+  ]
+}

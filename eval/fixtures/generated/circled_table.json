@@ -1,0 +1,21 @@
+{
+  "document_id": "cp3-circled_table",
+  "elements": [
+    {
+      "page": 9,
+      "region_order": 1,
+      "region_type": "table",
+      "content": "Bảng được chọn: Model A 0.72; Model B 0.81; Model C 0.76.",
+      "saved_link": "D:\\All_Vin\\day5\\K3-hackathon-TireDurability-E402\\project\\ocr_output\\cp3-fixtures\\circled_table.png",
+      "original_filename": "circled_table.pdf",
+      "metadata": {
+        "coordinates": [
+          40,
+          100,
+          860,
+          490
+        ]
+      }
+    }
+  ]
+}

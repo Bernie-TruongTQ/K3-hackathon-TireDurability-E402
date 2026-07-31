@@ -1,0 +1,20 @@
+{
+  "document_id": "cp3-text_pipeline",
+  "elements": [
+    {
+      "page": 3,
+      "region_order": 1,
+      "region_type": "text",
+      "content": "# Pipeline\nBa bước chính: OCR; Chunking & Indexing; Retrieval & Generation.",
+      "original_filename": "text_pipeline.pdf",
+      "metadata": {
+        "coordinates": [
+          40,
+          80,
+          860,
+          460
+        ]
+      }
+    }
+  ]
+}

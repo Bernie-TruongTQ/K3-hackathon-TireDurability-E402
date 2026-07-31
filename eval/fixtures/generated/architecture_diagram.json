@@ -1,0 +1,21 @@
+{
+  "document_id": "cp3-architecture_diagram",
+  "elements": [
+    {
+      "page": 2,
+      "region_order": 1,
+      "region_type": "diagram",
+      "content": "Sau OCR là bước Chunk & Index, rồi Retrieve & Rerank, cuối cùng Generate.",
+      "saved_link": "D:\\All_Vin\\day5\\K3-hackathon-TireDurability-E402\\project\\ocr_output\\cp3-fixtures\\architecture_diagram.png",
+      "original_filename": "architecture_diagram.pdf",
+      "metadata": {
+        "coordinates": [
+          40,
+          100,
+          860,
+          490
+        ]
+      }
+    }
+  ]
+}

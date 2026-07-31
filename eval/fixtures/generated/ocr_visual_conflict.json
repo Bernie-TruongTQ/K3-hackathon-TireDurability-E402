@@ -1,0 +1,21 @@
+{
+  "document_id": "cp3-ocr_visual_conflict",
+  "elements": [
+    {
+      "page": 11,
+      "region_order": 1,
+      "region_type": "table",
+      "content": "OCR ghi 75%, nhưng bảng trong ảnh gốc ghi 73%. Phải nêu rõ mâu thuẫn và ưu tiên ảnh gốc.",
+      "saved_link": "D:\\All_Vin\\day5\\K3-hackathon-TireDurability-E402\\project\\ocr_output\\cp3-fixtures\\ocr_visual_conflict.png",
+      "original_filename": "ocr_visual_conflict.pdf",
+      "metadata": {
+        "coordinates": [
+          40,
+          100,
+          860,
+          490
+        ]
+      }
+    }
+  ]
+}
